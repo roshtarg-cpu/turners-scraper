@@ -1,0 +1,14 @@
+{
+  "$schema": "https://apify.com/schemas/v1/output.ide.json",
+  "actorOutputSchemaVersion": 1,
+  "title": "Turners Car Scraper Output",
+  "description": "Scraped car listings from Turners.co.nz",
+  "properties": {
+    "results": {
+      "type": "string",
+      "title": "Results",
+      "description": "Dataset containing scraped car listings",
+      "template": "{{links.apiDefaultDatasetUrl}}/items"
+    }
+  }
+}

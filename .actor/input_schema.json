@@ -1,0 +1,91 @@
+{
+  "$schema": "https://apify.com/schemas/v1/input.ide.json",
+  "title": "Turners Car Scraper Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "maxResults": {
+      "type": "integer",
+      "title": "Max Results",
+      "description": "Maximum number of car listings to scrape",
+      "default": 50,
+      "prefill": 10,
+      "minimum": 1,
+      "maximum": 5000,
+      "editor": "number"
+    },
+    "location": {
+      "type": "string",
+      "title": "Location",
+      "description": "Filter by Turners branch location (e.g., Auckland, Wellington, Christchurch)",
+      "prefill": "Auckland",
+      "editor": "textfield"
+    },
+    "make": {
+      "type": "string",
+      "title": "Make",
+      "description": "Car manufacturer (e.g., Toyota, Mazda, Honda)",
+      "prefill": "Toyota",
+      "editor": "textfield"
+    },
+    "model": {
+      "type": "string",
+      "title": "Model",
+      "description": "Car model (e.g., Corolla, Camry, Hilux)",
+      "prefill": "",
+      "editor": "textfield"
+    },
+    "priceMin": {
+      "type": "integer",
+      "title": "Minimum Price (NZD)",
+      "description": "Minimum price in New Zealand Dollars",
+      "prefill": 0,
+      "minimum": 0,
+      "editor": "number"
+    },
+    "priceMax": {
+      "type": "integer",
+      "title": "Maximum Price (NZD)",
+      "description": "Maximum price in New Zealand Dollars",
+      "prefill": 50000,
+      "minimum": 0,
+      "editor": "number"
+    },
+    "yearMin": {
+      "type": "integer",
+      "title": "Minimum Year",
+      "description": "Minimum year of manufacture",
+      "prefill": 2015,
+      "minimum": 1980,
+      "maximum": 2026,
+      "editor": "number"
+    },
+    "yearMax": {
+      "type": "integer",
+      "title": "Maximum Year",
+      "description": "Maximum year of manufacture",
+      "prefill": 2026,
+      "minimum": 1980,
+      "maximum": 2026,
+      "editor": "number"
+    },
+    "color": {
+      "type": "string",
+      "title": "Color",
+      "description": "Preferred car color",
+      "prefill": "White",
+      "editor": "textfield"
+    },
+    "proxyConfiguration": {
+      "type": "object",
+      "title": "Proxy Configuration",
+      "description": "Apify proxy settings",
+      "prefill": {
+        "useApifyProxy": true,
+        "apifyProxyGroups": ["RESIDENTIAL"]
+      },
+      "editor": "proxy"
+    }
+  },
+  "required": ["maxResults"]
+}
