@@ -3,7 +3,7 @@
   "actorSpecification": 1,
   "name": "turners-scraper",
   "title": "Turners.co.nz Car Scraper - NZ's Largest Used Car Network",
-  "description": "Extract car listings from Turners.co.nz with prices, specs, locations, and images. Scrapes nearly 3,000 vehicles from New Zealand's most trusted used car dealership network across 20+ branches. Filter by make, model, price, year, and location. Perfect for market analysis, price comparison, inventory tracking, and automotive data research. Works seamlessly with Claude, ChatGPT, and AI agents via Apify MCP.",
+  "description": "Scrape nearly 3,000 car listings from Turners.co.nz with prices, specs, locations & images. Filter by make, model, price, year & location. Perfect for market analysis, price tracking & automotive data. Works with Claude, ChatGPT & AI agents via Apify MCP.",
   "version": "1.0",
   "meta": {
     "templateId": "python-start"
